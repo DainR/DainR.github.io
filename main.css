@@ -78,16 +78,18 @@ h1, h3 {
 
 .about {
     display: flex;
-    height: 500px;
+    height: auto;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .about p {
     padding: 10px;
     font-size: 18px;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     line-height: 2em;
     color: #333;
 }
@@ -106,24 +108,62 @@ h1, h3 {
 /* project */
 .project {
     width: 100%;
-    height: 550px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .project div {
     width: 300px;
     height: 300px;
-    border: 1px solid #888;
     margin-bottom: 20px;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px #555;
+}
+
+.project-item img {
+    width: 90%;
+    margin: 10px 0px 10px 0px;
+}
+
+.project-item h4 {
+    margin: 10px;
+}
+
+.project-link {
+    text-align: center;
+}
+
+.project-link a {
+    display: inline-block;
+    margin: 20px;
+    font-size: 18px;
+    box-shadow: 1px 1px 5px #555;
+    padding: 10px;
+    width: 100px;
+    text-decoration: none;
+}
+
+.project-item:hover, .project-link a:hover {
+    transition: ease-out 0.2s;
+    transform: scale(1.1);
 }
 
 /* media query*/
 @media only screen and (min-width: 720px) {
     .about p {
         width: 70%;
+        /* box-shadow: 1px 1px 10px #555; */
     }
 
     nav {
