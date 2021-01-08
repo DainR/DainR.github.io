@@ -27,13 +27,14 @@ header {
     height: 70px;
     margin: 0 auto;
     top: 0;
-    background-color: white;
+    background-color:#15AABF;
+    z-index: 1000;
 }
 
 nav {
     width: 100%;
     height: 70px;
-    background-color: #e3e3e3;
+    background-color: #15AABF;
     display: flex;
     align-items: center;
 }
@@ -52,13 +53,19 @@ nav ul li a {
     color: #111;
     padding: 5px;
     font-size: 18px;
-    background-color: #999;
-    box-shadow: 1px 1px 2px rgb(32, 31, 31);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.name {
+    font-size: 24px;
+    font-family: impact;
 }
 
 nav ul li a:hover {
-    cursor: pointer;
-    background-color: #e3e3e3;
+    background-color: #fff;
+    color: #000;
 }
 
 /* home */
@@ -135,6 +142,8 @@ h1, h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #343A40;
+    color: #fff;
     box-shadow: 1px 1px 10px #555;
 }
 
@@ -155,6 +164,8 @@ h1, h3 {
     display: inline-block;
     margin: 20px;
     font-size: 18px;
+    background-color: #15AABF;
+    color: #fff;
     box-shadow: 1px 1px 5px  rgb(32, 31, 31);
     padding: 10px;
     width: 100px;
@@ -166,6 +177,48 @@ h1, h3 {
     transform: scale(1.1);
 }
 
+/* contact */
+.contact {
+    background-color: #15AABF;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact .dain-portfolio {
+    font-size: 30px;
+    font-family: impact;
+}
+
+.contact .dain-portfolio a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact .dain-portfolio a:hover {
+    text-decoration: underline;
+}
+
+.contact .social {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact .social span  {
+    font-size: 50px;
+    color: #fff;
+}
+
+.contact .social span a {
+    color: #fff;
+}
+
+.contact .social span a:hover {
+    opacity: 0.7;
+}
 /* media query*/
 @media only screen and (min-width: 720px) {
     .about p {
