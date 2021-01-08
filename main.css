@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Raleway', sans-serif;
     padding-top: 55px;
 }
 
@@ -45,7 +45,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 15px;
+    margin: 10px;
 }
 
 nav ul li a {
@@ -59,8 +59,7 @@ nav ul li a {
 }
 
 .name {
-    font-size: 24px;
-    font-family: impact;
+    background-color: #343A40;;
 }
 
 nav ul li a:hover {
@@ -182,14 +181,13 @@ h1, h3 {
     background-color: #15AABF;
     height: 300px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
 .contact .dain-portfolio {
     font-size: 30px;
-    font-family: impact;
 }
 
 .contact .dain-portfolio a {
@@ -212,6 +210,10 @@ h1, h3 {
     color: #fff;
 }
 
+.copyright {
+    color: #fff;
+}
+
 .contact .social span a {
     color: #fff;
 }
@@ -224,6 +226,10 @@ h1, h3 {
     .about p {
         width: 70%;
         /* box-shadow: 1px 1px 10px #555; */
+    }
+
+    .contact {
+        flex-direction: row;
     }
 
 }
