@@ -200,7 +200,7 @@ h1, h3 {
 }
 
 .contact .social {
-    width: 40%;
+    width: 95%;
     display: flex;
     justify-content: space-around;
 }
@@ -230,6 +230,10 @@ h1, h3 {
 
     .contact {
         flex-direction: row;
+    }
+
+    .contact .social {
+        width: 40%;
     }
 
 }
