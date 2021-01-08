@@ -27,14 +27,14 @@ header {
     height: 70px;
     margin: 0 auto;
     top: 0;
-    background-color:#15AABF;
+    background-color: #5C940D;
     z-index: 1000;
 }
 
 nav {
     width: 100%;
     height: 70px;
-    background-color: #15AABF;
+    background-color: #74B816;
     display: flex;
     align-items: center;
 }
@@ -59,7 +59,7 @@ nav ul li a {
 }
 
 .name {
-    background-color: #343A40;;
+    background-color: #455256;
 }
 
 nav ul li a:hover {
@@ -87,6 +87,16 @@ h1, h3 {
     padding: 10px;
 }
 
+h1 {
+    background-color:  #5C940D;
+    color: #fff;
+}
+
+h3 {
+    background-color: #455256;
+    color: #fff;
+}
+
 /* about */
 
 .about {
@@ -109,8 +119,8 @@ h1, h3 {
 
 .about a {
     text-decoration: none;
-    color: #333;
-    background-color: #e3e3e3;
+    color: #fff;
+    background-color: #74B816;
     padding: 5px;
 }
 
@@ -141,7 +151,7 @@ h1, h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #343A40;
+    background-color: #455256;
     color: #fff;
     box-shadow: 1px 1px 10px #555;
 }
@@ -163,7 +173,7 @@ h1, h3 {
     display: inline-block;
     margin: 20px;
     font-size: 18px;
-    background-color: #15AABF;
+    background-color: #74B816;
     color: #fff;
     box-shadow: 1px 1px 5px  rgb(32, 31, 31);
     padding: 10px;
@@ -178,8 +188,8 @@ h1, h3 {
 
 /* contact */
 .contact {
-    background-color: #15AABF;
-    height: 300px;
+    background-color: #74B816;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
