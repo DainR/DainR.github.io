@@ -6,86 +6,52 @@
     <title>Dain Ramnauth</title>
     <script src="https://kit.fontawesome.com/04b83dcd2f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
+
+        <div class="title">
+            <h1>Dain R.</h1>
+        </div>
+
         <nav>
-            <ul>
-                <li><a href="#home" class="name">Dain R.</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="https://www.freecodecamp.org/dainramnauth" target="_blank">
+                <i class="fab fa-free-code-camp"></i>
+            </a>
+            <a href="https://github.com/dainr" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:ddramnauth07@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="#"></a>
         </nav>
+            
     </header>
 
-    
-    <div class="home" id="home">
-        <h1>Dain Ramnauth</h1>
-        <h3>Front End Developer</h3>       
-    </div>
-
-    <div class="about" id="about">
-        <p>
-            I am a Front End Developer based in New York City. I got into coding because I want a career that is rewarding and something that I would love doing. I graduated with an AAS in Electromechanical Engineering Technology but it really wasn't something I wanted to specifically focused my career in, so I started to learn to code through freecodecamp.org and ever since I loved it and knew that being a Front End Developer was the right career choice for me. I spend most of my time learning and building skills through projects and collaborating with other developers. Checkout some of my <a href="#project">projects!</a>
+    <main role="main">
+        <div class="about">
+            <h2 class="job-title">Frontend Developer</h2>
+            <p>
+            <span class="name">Hello, I am Dain</span> and I live in New York City. I am an aspiring Frontend Developer. I graduated with AAS in Electromechanical Engineering Technology from NYCCT. I did a little bit of Java and C++ while in school and one thing led to another and I discovered frontend development. I am looking to change my career and whatever time I have I am teaching myself to code using freecodecamp and building my own projects.
         </p>
-    </div>
 
-    <hr/>
-    <div class="project" id="project">
-        <div class="project-item">
-            <h4>Landing Page</h4>
-            <img src="img/landingpage.png" alt="project image">
-            <div class="project-link">
-                <a href="https://dainr.github.io/product-landing-page/" target="_blank">Live</a>
-                <a href="https://github.com/dainr/product-landing-page" target="_blank">Repo</a>
-            </div>
-        </div>
-
-        <div class="project-item">   
-            <h4>Survey Form</h4>
-            <img src="img/surveyform.png" alt="project image">
-            <div class="project-link">
-                <a href="https://dainr.github.io/survey-form/" target="_blank">Live</a>
-                <a href="https://github.com/dainr/survey-form" target="_blank">Repo</a>
-            </div>
-        </div>
-
-        <div class="project-item">   
-            <h4>Color Generator</h4>
-            <img src="img/color-generator.png" alt="project image">
-            <div class="project-link">
-                <a href="https://dainr.github.io/color-generator/" target="_blank">Live</a>
-                <a href="https://github.com/dainr/color-generator" target="_blank">Repo</a>
-            </div>
-        </div>
-
-        <div class="project-item">   
-            <h4>Current Weather</h4>
-            <img src="img/current-weather.png" alt="project image">
-            <div class="project-link">
-                <a href="https://dainr.github.io/7-weather/" target="_blank">Live</a>
-                <a href="https://github.com/dainr/7-weather" target="_blank">Repo</a>
-            </div>
-        </div>
-    </div>
-
-    <footer class="contact" id="contact">
-        <div class="social">
-            <span><a href="mailto:ddramnauth07@gmail.com"><i class="fas fa-envelope"></i></a></span>
-            <span><a href="https://www.linkedin.com/in/dainr/" target="_blank"><i class="fab fa-linkedin"></i></a></span>
-            <span><a href="https://github.com/dainr" target="_blank"><i class="fab fa-github"></i></a></span>
-            <span><a href="https://www.freecodecamp.org/dainramnauth" target="_blank"><i class="fab fa-free-code-camp"></i></a></span>
-        </div>
-        <div>
-            <p class="dain-portfolio"><a href="#">Dain R. Portfolio</a></p>
-            <p class="copyright">Copyright <span class="copyright datetime"></span></p>
+        <p class="language-tools">Languages and Tools I use:</p>
+        <p>JavaScript, HTML, CSS, Git, Terminal, VSCode</p>
+            
         </div>
         
-    </footer>
+        <div class="project">
+            <h3 class="project-heading">Projects</h3>
+            <div class="tile">
+                <ul class="user-repos"></ul>
+            </div>
+        </div>
+    </main>
 
+    
     <script src="script.js"></script>
 </body>
 </html>

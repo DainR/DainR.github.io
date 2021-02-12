@@ -4,246 +4,156 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Raleway', sans-serif;
-    padding-top: 55px;
+    margin-top: 150px;
+    color: #444;
 }
-
-hr {
-    width: 60%;
-    color: #999;
-    margin: 0 auto;
-}
-
-/* navigation */
 
 header {
-    position: fixed;
-    width: 100%;
-    height: 70px;
     margin: 0 auto;
+    position: fixed;
     top: 0;
-    background-color: #5C940D;
-    z-index: 1000;
-}
-
-nav {
+    left: 0;
+    right: 0;
+    height: 100px;
     width: 100%;
-    height: 70px;
-    background-color: #74B816;
-    display: flex;
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #111;
-    padding: 5px;
-    font-size: 18px;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.name {
-    background-color: #455256;
-}
-
-nav ul li a:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-/* home */
-.home {
-    width: 100%;
-    height: 550px;
-    background: url(img/medium.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    background-color: #fff;
 }
 
-h1, h3 {
-    background-color: #fff;
-    margin: 10px;
-    padding: 10px;
+
+nav {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #000;
+    margin: 0 20px 0 20px;
+}
+
+nav a i {
+    font-size: 35px;
+    transition: .5s;
+}
+
+nav a i:hover {
+    transform: rotateY(180deg);
+}
+
+.fa-free-code-camp {
+    color: green;
+}
+
+.fa-github {
+    color: #444;
+}
+
+.fa-envelope {
+    color: #e74c3c;
 }
 
 h1 {
-    background-color:  #5C940D;
-    color: #fff;
-}
-
-h3 {
-    background-color: #455256;
-    color: #fff;
-}
-
-/* about */
-
-.about {
-    display: flex;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.about p {
-    padding: 10px;
-    font-size: 18px;
-    margin: 10px;
-    padding: 15px;
-    line-height: 2em;
-    color: #333;
-}
-
-.about a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #74B816;
-    padding: 5px;
-}
-
-.about a:hover {
-    text-decoration: underline;
-}
-
-/* project */
-.project {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.project div {
-    width: 300px;
-    height: 300px;
+    margin: 0 auto;
     margin-bottom: 20px;
+    padding: 5px;
+    color: #2980b9;
 }
 
-.project-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #455256;
-    color: #fff;
-    box-shadow: 1px 1px 10px #555;
-}
-
-.project-item img {
-    width: 90%;
-    margin: 10px 0px 10px 0px;
-}
-
-.project-item h4 {
-    margin: 10px;
-}
-
-.project-link {
+h2 {
     text-align: center;
 }
-
-.project-link a {
-    display: inline-block;
-    margin: 20px;
-    font-size: 18px;
-    background-color: #74B816;
-    color: #fff;
-    box-shadow: 1px 1px 5px  rgb(32, 31, 31);
-    padding: 10px;
-    width: 100px;
-    text-decoration: none;
+.job-title:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 20px; 
+    border-bottom: 1px solid black; 
 }
 
-.project-item:hover, .project-link a:hover {
-    transition: ease-out 0.2s;
-    transform: scale(1.1);
+
+.about {
+    margin: 0 auto;
+    width: 95%;
 }
 
-/* contact */
-.contact {
-    background-color: #74B816;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.contact .dain-portfolio {
+.hello {
     font-size: 30px;
 }
 
-.contact .dain-portfolio a {
-    color: #fff;
-    text-decoration: none;
+.name {
+    color: #2980b9;
+    font-size: 30px;
 }
 
-.contact .dain-portfolio a:hover {
-    text-decoration: underline;
+.about p {
+    margin: 20px auto;
+    line-height: 2em;
+    font-size: 17px;
+    text-align: center;
 }
 
-.contact .social {
+.language-tools {
+    color: #2980b9;
+    font-weight: 700;
+}
+
+.project {
     width: 95%;
-    display: flex;
-    justify-content: space-around;
+    margin: 0 auto;
 }
 
-.contact .social span  {
-    font-size: 50px;
-    color: #fff;
+.tile {
+    margin: 0 auto;
 }
 
-.copyright {
-    color: #fff;
+.user-repos li {
+    list-style: none;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+    border: 2px solid #333;
+    padding: 10px;
 }
 
-.contact .social span a {
-    color: #fff;
+.repo-name span {
+    color: #2980b9;
+    font-weight: 700;
 }
 
-.contact .social span a:hover {
-    opacity: 0.7;
-}
-/* media query*/
-@media only screen and (min-width: 720px) {
-    .about p {
-        width: 70%;
-        /* box-shadow: 1px 1px 10px #555; */
-    }
 
-    .contact {
+@media screen and (min-width: 720px) {
+
+    /* main {
         flex-direction: row;
+        justify-content: space-around;
+    } */
+
+    header {
+        width: 70%;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .contact .social {
+    nav {
+        justify-content: flex-end;
+    }
+
+    .title {
         width: 40%;
+    }
+
+    .about {
+        width: 60%;
+    }
+
+    .project {
+        width: 60%;
     }
 
 }
